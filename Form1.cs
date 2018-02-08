@@ -32,6 +32,10 @@ namespace VeNote
             {
                 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("uk-UA");
             }
+            else if (inimanager.GetPrivateString("main", "language") == "be-BY")
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("be-BY");
+            }
 
             InitializeComponent();
             arg = args;
@@ -56,6 +60,18 @@ namespace VeNote
             {
                 richTextBoxClient.WordWrap = false;
                 richTextBoxClient.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
+            }
+            if (inimanager.GetPrivateString("window", "locationx") != null)
+            {
+                this.Location = new Point(
+                        Convert.ToInt32(inimanager.GetPrivateString("window", "locationx")),
+                        Convert.ToInt32(inimanager.GetPrivateString("window", "locationy"))
+                    );
+                this.Size = new Size(
+                        Convert.ToInt32(inimanager.GetPrivateString("window", "sizew")),
+                        Convert.ToInt32(inimanager.GetPrivateString("window", "sizeh"))
+                );
+
             }
         }
 
@@ -114,6 +130,9 @@ namespace VeNote
                     case "ru-RU":
                         SaveDocumentQuestionString = "Вы хотите сохранить документ?";
                         break;
+                    case "be-BY":
+                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
+                        break;
                 }
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
                 "VeNote",
@@ -169,6 +188,10 @@ namespace VeNote
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
+            inimanager.WritePrivateString("window", "locationx", Convert.ToString(this.Location.X));
+            inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
+            inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
+            inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
             if (richTextBoxClient.Text != "")
             {
                 switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
@@ -182,7 +205,13 @@ namespace VeNote
                     case "ru-RU":
                         SaveDocumentQuestionString = "Вы хотите сохранить документ?";
                         break;
+                    case "be-BY":
+                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
+                        break;
                 }
+                
+
+
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
                 "VeNote",
                 MessageBoxButtons.YesNoCancel,
@@ -203,6 +232,7 @@ namespace VeNote
                 {
                     e.Cancel = true;
                 }
+
             }
         }
 
@@ -238,6 +268,10 @@ namespace VeNote
 
         private void ribbonOrbMenuItemExit_Click(object sender, EventArgs e)
         {
+            inimanager.WritePrivateString("window", "locationx", Convert.ToString(this.Location.X));
+            inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
+            inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
+            inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
             if (richTextBoxClient.Text != "")
             {
                 switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
@@ -250,6 +284,9 @@ namespace VeNote
                         break;
                     case "ru-RU":
                         SaveDocumentQuestionString = "Вы хотите сохранить документ?";
+                        break;
+                    case "be-BY":
+                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
                         break;
                 }
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
@@ -273,7 +310,7 @@ namespace VeNote
 
         private void ribbonOrbOptionButton2_Click(object sender, EventArgs e)
         {
-                        MessageBox.Show("VeNote 3.0.1 alpha\nRibbon панель создана с помощью библиотеки: https://github.com/RibbonWinForms/RibbonWinForms\nVeselcraft.ru 2018",
+            MessageBox.Show("VeNote 3.0.2 alpha\nRibbon панель создана с помощью библиотеки: https://github.com/RibbonWinForms/RibbonWinForms\nПеракладзена на беларускую мову Даніілам Мысливицом\nVeselcraft.ru 2018",
                             "VeNote",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);

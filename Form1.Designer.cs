@@ -35,19 +35,19 @@
             this.richTextBoxClient = new System.Windows.Forms.RichTextBox();
             this.ribbonTab1 = new System.Windows.Forms.RibbonTab();
             this.ribbonPanel1 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
+            this.ribbonSeparator2 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
+            this.ribbon1 = new System.Windows.Forms.Ribbon();
             this.ribbonButtonPaste = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonCopy = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonCut = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel2 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButtonFont = new System.Windows.Forms.RibbonButton();
-            this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonButtonFind = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonSelectAll = new System.Windows.Forms.RibbonButton();
-            this.ribbonSeparator2 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonButtonUndo = new System.Windows.Forms.RibbonButton();
             this.ribbonButtonRedo = new System.Windows.Forms.RibbonButton();
-            this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
-            this.ribbon1 = new System.Windows.Forms.Ribbon();
             this.ribbonOrbMenuItemNew = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonOrbMenuItemOpen = new System.Windows.Forms.RibbonOrbMenuItem();
             this.ribbonOrbMenuItemSave = new System.Windows.Forms.RibbonOrbMenuItem();
@@ -70,8 +70,11 @@
             // 
             // richTextBoxClient
             // 
-            this.richTextBoxClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxClient.AccessibleDescription = null;
+            this.richTextBoxClient.AccessibleName = null;
             resources.ApplyResources(this.richTextBoxClient, "richTextBoxClient");
+            this.richTextBoxClient.BackgroundImage = null;
+            this.richTextBoxClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxClient.Name = "richTextBoxClient";
             this.richTextBoxClient.TextChanged += new System.EventHandler(this.richTextBoxClient_TextChanged);
             // 
@@ -82,6 +85,8 @@
             this.ribbonTab1.Panels.Add(this.ribbonPanel2);
             this.ribbonTab1.Panels.Add(this.ribbonPanel3);
             resources.ApplyResources(this.ribbonTab1, "ribbonTab1");
+            this.ribbonTab1.ToolTip = null;
+            this.ribbonTab1.ToolTipImage = null;
             // 
             // ribbonPanel1
             // 
@@ -92,53 +97,12 @@
             this.ribbonPanel1.Name = "ribbonPanel1";
             resources.ApplyResources(this.ribbonPanel1, "ribbonPanel1");
             // 
-            // ribbonButtonPaste
-            // 
-            this.ribbonButtonPaste.AltKey = "Ctrl+V";
-            this.ribbonButtonPaste.Image = global::VeNote.Properties.Resources.paste1;
-            this.ribbonButtonPaste.LargeImage = global::VeNote.Properties.Resources.paste1;
-            this.ribbonButtonPaste.Name = "ribbonButtonPaste";
-            this.ribbonButtonPaste.SmallImage = global::VeNote.Properties.Resources.paste1;
-            resources.ApplyResources(this.ribbonButtonPaste, "ribbonButtonPaste");
-            this.ribbonButtonPaste.Click += new System.EventHandler(this.ribbonButtonPaste_Click);
-            // 
-            // ribbonButtonCopy
-            // 
-            this.ribbonButtonCopy.AltKey = "Ctrl+C";
-            this.ribbonButtonCopy.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCopy.Image")));
-            this.ribbonButtonCopy.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCopy.LargeImage")));
-            this.ribbonButtonCopy.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonCopy.Name = "ribbonButtonCopy";
-            this.ribbonButtonCopy.SmallImage = global::VeNote.Properties.Resources.copy;
-            resources.ApplyResources(this.ribbonButtonCopy, "ribbonButtonCopy");
-            this.ribbonButtonCopy.Click += new System.EventHandler(this.ribbonButtonCopy_Click);
-            // 
-            // ribbonButtonCut
-            // 
-            this.ribbonButtonCut.AltKey = "Ctrl+X";
-            this.ribbonButtonCut.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCut.Image")));
-            this.ribbonButtonCut.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCut.LargeImage")));
-            this.ribbonButtonCut.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonCut.Name = "ribbonButtonCut";
-            this.ribbonButtonCut.SmallImage = global::VeNote.Properties.Resources.cut;
-            resources.ApplyResources(this.ribbonButtonCut, "ribbonButtonCut");
-            this.ribbonButtonCut.Click += new System.EventHandler(this.ribbonButtonCut_Click);
-            // 
             // ribbonPanel2
             // 
             this.ribbonPanel2.ButtonMoreVisible = false;
             this.ribbonPanel2.Items.Add(this.ribbonButtonFont);
             this.ribbonPanel2.Name = "ribbonPanel2";
             resources.ApplyResources(this.ribbonPanel2, "ribbonPanel2");
-            // 
-            // ribbonButtonFont
-            // 
-            this.ribbonButtonFont.Image = global::VeNote.Properties.Resources.font;
-            this.ribbonButtonFont.LargeImage = global::VeNote.Properties.Resources.font;
-            this.ribbonButtonFont.Name = "ribbonButtonFont";
-            this.ribbonButtonFont.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFont.SmallImage")));
-            resources.ApplyResources(this.ribbonButtonFont, "ribbonButtonFont");
-            this.ribbonButtonFont.Click += new System.EventHandler(this.ribbonButtonFont_Click);
             // 
             // ribbonPanel3
             // 
@@ -151,66 +115,42 @@
             this.ribbonPanel3.Name = "ribbonPanel3";
             resources.ApplyResources(this.ribbonPanel3, "ribbonPanel3");
             // 
-            // ribbonButtonFind
-            // 
-            this.ribbonButtonFind.Enabled = false;
-            this.ribbonButtonFind.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFind.Image")));
-            this.ribbonButtonFind.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFind.LargeImage")));
-            this.ribbonButtonFind.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonFind.Name = "ribbonButtonFind";
-            this.ribbonButtonFind.SmallImage = global::VeNote.Properties.Resources.system_search;
-            resources.ApplyResources(this.ribbonButtonFind, "ribbonButtonFind");
-            // 
-            // ribbonButtonSelectAll
-            // 
-            this.ribbonButtonSelectAll.AltKey = "Ctrl+A";
-            this.ribbonButtonSelectAll.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonSelectAll.Image")));
-            this.ribbonButtonSelectAll.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonSelectAll.LargeImage")));
-            this.ribbonButtonSelectAll.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonSelectAll.Name = "ribbonButtonSelectAll";
-            this.ribbonButtonSelectAll.SmallImage = global::VeNote.Properties.Resources.cursor;
-            resources.ApplyResources(this.ribbonButtonSelectAll, "ribbonButtonSelectAll");
-            this.ribbonButtonSelectAll.Click += new System.EventHandler(this.ribbonButtonSelectAll_Click);
-            // 
             // ribbonSeparator2
             // 
             this.ribbonSeparator2.DropDownWidth = System.Windows.Forms.RibbonSeparatorDropDownWidth.Partial;
             this.ribbonSeparator2.Name = "ribbonSeparator2";
-            // 
-            // ribbonButtonUndo
-            // 
-            this.ribbonButtonUndo.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonUndo.Image")));
-            this.ribbonButtonUndo.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonUndo.LargeImage")));
-            this.ribbonButtonUndo.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonUndo.Name = "ribbonButtonUndo";
-            this.ribbonButtonUndo.SmallImage = global::VeNote.Properties.Resources.undo;
-            resources.ApplyResources(this.ribbonButtonUndo, "ribbonButtonUndo");
-            this.ribbonButtonUndo.Click += new System.EventHandler(this.ribbonButtonUndo_Click);
-            // 
-            // ribbonButtonRedo
-            // 
-            this.ribbonButtonRedo.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonRedo.Image")));
-            this.ribbonButtonRedo.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonRedo.LargeImage")));
-            this.ribbonButtonRedo.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
-            this.ribbonButtonRedo.Name = "ribbonButtonRedo";
-            this.ribbonButtonRedo.SmallImage = global::VeNote.Properties.Resources.redo;
-            resources.ApplyResources(this.ribbonButtonRedo, "ribbonButtonRedo");
-            this.ribbonButtonRedo.Click += new System.EventHandler(this.ribbonButtonRedo_Click);
+            this.ribbonSeparator2.Text = null;
+            this.ribbonSeparator2.ToolTip = null;
+            this.ribbonSeparator2.ToolTipImage = null;
             // 
             // ribbonSeparator1
             // 
             this.ribbonSeparator1.DropDownWidth = System.Windows.Forms.RibbonSeparatorDropDownWidth.Partial;
             this.ribbonSeparator1.Name = "ribbonSeparator1";
+            this.ribbonSeparator1.Text = null;
+            this.ribbonSeparator1.ToolTip = null;
+            this.ribbonSeparator1.ToolTipImage = null;
             // 
             // ribbon1
             // 
+            this.ribbon1.AccessibleDescription = null;
+            this.ribbon1.AccessibleName = null;
             resources.ApplyResources(this.ribbon1, "ribbon1");
+            this.ribbon1.BackgroundImage = null;
             this.ribbon1.Minimized = false;
             this.ribbon1.Name = "ribbon1";
             // 
             // 
             // 
+            this.ribbon1.OrbDropDown.AccessibleDescription = null;
+            this.ribbon1.OrbDropDown.AccessibleName = null;
+            this.ribbon1.OrbDropDown.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("ribbon1.OrbDropDown.Anchor")));
+            this.ribbon1.OrbDropDown.BackgroundImage = null;
+            this.ribbon1.OrbDropDown.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("ribbon1.OrbDropDown.BackgroundImageLayout")));
             this.ribbon1.OrbDropDown.BorderRoundness = 8;
+            this.ribbon1.OrbDropDown.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("ribbon1.OrbDropDown.Dock")));
+            this.ribbon1.OrbDropDown.Font = null;
+            this.ribbon1.OrbDropDown.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("ribbon1.OrbDropDown.ImeMode")));
             this.ribbon1.OrbDropDown.Location = ((System.Drawing.Point)(resources.GetObject("ribbon1.OrbDropDown.Location")));
             this.ribbon1.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItemNew);
             this.ribbon1.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItemOpen);
@@ -220,6 +160,7 @@
             this.ribbon1.OrbDropDown.MenuItems.Add(this.ribbonOrbMenuItemExit);
             this.ribbon1.OrbDropDown.Name = "";
             this.ribbon1.OrbDropDown.OptionItems.Add(this.ribbonOrbOptionButton2);
+            this.ribbon1.OrbDropDown.RightToLeft = ((System.Windows.Forms.RightToLeft)(resources.GetObject("ribbon1.OrbDropDown.RightToLeft")));
             this.ribbon1.OrbDropDown.Size = ((System.Drawing.Size)(resources.GetObject("ribbon1.OrbDropDown.Size")));
             this.ribbon1.OrbDropDown.TabIndex = ((int)(resources.GetObject("ribbon1.OrbDropDown.TabIndex")));
             this.ribbon1.OrbImage = global::VeNote.Properties.Resources.logo;
@@ -232,9 +173,109 @@
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButtonSave);
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButtonOpen);
             this.ribbon1.QuickAccessToolbar.Text = resources.GetString("ribbon1.QuickAccessToolbar.Text");
+            this.ribbon1.QuickAccessToolbar.ToolTip = null;
+            this.ribbon1.QuickAccessToolbar.ToolTipImage = null;
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Trebuchet MS", 9F);
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.TabsMargin = new System.Windows.Forms.Padding(12, 26, 20, 0);
+            // 
+            // ribbonButtonPaste
+            // 
+            this.ribbonButtonPaste.AltKey = "Ctrl+V";
+            this.ribbonButtonPaste.Image = global::VeNote.Properties.Resources.paste1;
+            this.ribbonButtonPaste.LargeImage = global::VeNote.Properties.Resources.paste1;
+            this.ribbonButtonPaste.Name = "ribbonButtonPaste";
+            this.ribbonButtonPaste.SmallImage = global::VeNote.Properties.Resources.paste1;
+            resources.ApplyResources(this.ribbonButtonPaste, "ribbonButtonPaste");
+            this.ribbonButtonPaste.ToolTip = null;
+            this.ribbonButtonPaste.ToolTipImage = null;
+            this.ribbonButtonPaste.Click += new System.EventHandler(this.ribbonButtonPaste_Click);
+            // 
+            // ribbonButtonCopy
+            // 
+            this.ribbonButtonCopy.AltKey = "Ctrl+C";
+            this.ribbonButtonCopy.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCopy.Image")));
+            this.ribbonButtonCopy.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCopy.LargeImage")));
+            this.ribbonButtonCopy.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonCopy.Name = "ribbonButtonCopy";
+            this.ribbonButtonCopy.SmallImage = global::VeNote.Properties.Resources.copy;
+            resources.ApplyResources(this.ribbonButtonCopy, "ribbonButtonCopy");
+            this.ribbonButtonCopy.ToolTip = null;
+            this.ribbonButtonCopy.ToolTipImage = null;
+            this.ribbonButtonCopy.Click += new System.EventHandler(this.ribbonButtonCopy_Click);
+            // 
+            // ribbonButtonCut
+            // 
+            this.ribbonButtonCut.AltKey = "Ctrl+X";
+            this.ribbonButtonCut.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCut.Image")));
+            this.ribbonButtonCut.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonCut.LargeImage")));
+            this.ribbonButtonCut.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonCut.Name = "ribbonButtonCut";
+            this.ribbonButtonCut.SmallImage = global::VeNote.Properties.Resources.cut;
+            resources.ApplyResources(this.ribbonButtonCut, "ribbonButtonCut");
+            this.ribbonButtonCut.ToolTip = null;
+            this.ribbonButtonCut.ToolTipImage = null;
+            this.ribbonButtonCut.Click += new System.EventHandler(this.ribbonButtonCut_Click);
+            // 
+            // ribbonButtonFont
+            // 
+            this.ribbonButtonFont.Image = global::VeNote.Properties.Resources.font;
+            this.ribbonButtonFont.LargeImage = global::VeNote.Properties.Resources.font;
+            this.ribbonButtonFont.Name = "ribbonButtonFont";
+            this.ribbonButtonFont.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFont.SmallImage")));
+            resources.ApplyResources(this.ribbonButtonFont, "ribbonButtonFont");
+            this.ribbonButtonFont.ToolTip = null;
+            this.ribbonButtonFont.ToolTipImage = null;
+            this.ribbonButtonFont.Click += new System.EventHandler(this.ribbonButtonFont_Click);
+            // 
+            // ribbonButtonFind
+            // 
+            this.ribbonButtonFind.Enabled = false;
+            this.ribbonButtonFind.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFind.Image")));
+            this.ribbonButtonFind.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonFind.LargeImage")));
+            this.ribbonButtonFind.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonFind.Name = "ribbonButtonFind";
+            this.ribbonButtonFind.SmallImage = global::VeNote.Properties.Resources.system_search;
+            resources.ApplyResources(this.ribbonButtonFind, "ribbonButtonFind");
+            this.ribbonButtonFind.ToolTip = null;
+            this.ribbonButtonFind.ToolTipImage = null;
+            // 
+            // ribbonButtonSelectAll
+            // 
+            this.ribbonButtonSelectAll.AltKey = "Ctrl+A";
+            this.ribbonButtonSelectAll.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonSelectAll.Image")));
+            this.ribbonButtonSelectAll.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonSelectAll.LargeImage")));
+            this.ribbonButtonSelectAll.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonSelectAll.Name = "ribbonButtonSelectAll";
+            this.ribbonButtonSelectAll.SmallImage = global::VeNote.Properties.Resources.cursor;
+            resources.ApplyResources(this.ribbonButtonSelectAll, "ribbonButtonSelectAll");
+            this.ribbonButtonSelectAll.ToolTip = null;
+            this.ribbonButtonSelectAll.ToolTipImage = null;
+            this.ribbonButtonSelectAll.Click += new System.EventHandler(this.ribbonButtonSelectAll_Click);
+            // 
+            // ribbonButtonUndo
+            // 
+            this.ribbonButtonUndo.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonUndo.Image")));
+            this.ribbonButtonUndo.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonUndo.LargeImage")));
+            this.ribbonButtonUndo.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonUndo.Name = "ribbonButtonUndo";
+            this.ribbonButtonUndo.SmallImage = global::VeNote.Properties.Resources.undo;
+            resources.ApplyResources(this.ribbonButtonUndo, "ribbonButtonUndo");
+            this.ribbonButtonUndo.ToolTip = null;
+            this.ribbonButtonUndo.ToolTipImage = null;
+            this.ribbonButtonUndo.Click += new System.EventHandler(this.ribbonButtonUndo_Click);
+            // 
+            // ribbonButtonRedo
+            // 
+            this.ribbonButtonRedo.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButtonRedo.Image")));
+            this.ribbonButtonRedo.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButtonRedo.LargeImage")));
+            this.ribbonButtonRedo.MaxSizeMode = System.Windows.Forms.RibbonElementSizeMode.Medium;
+            this.ribbonButtonRedo.Name = "ribbonButtonRedo";
+            this.ribbonButtonRedo.SmallImage = global::VeNote.Properties.Resources.redo;
+            resources.ApplyResources(this.ribbonButtonRedo, "ribbonButtonRedo");
+            this.ribbonButtonRedo.ToolTip = null;
+            this.ribbonButtonRedo.ToolTipImage = null;
+            this.ribbonButtonRedo.Click += new System.EventHandler(this.ribbonButtonRedo_Click);
             // 
             // ribbonOrbMenuItemNew
             // 
@@ -244,6 +285,8 @@
             this.ribbonOrbMenuItemNew.Name = "ribbonOrbMenuItemNew";
             this.ribbonOrbMenuItemNew.SmallImage = global::VeNote.Properties.Resources.default_document3232;
             resources.ApplyResources(this.ribbonOrbMenuItemNew, "ribbonOrbMenuItemNew");
+            this.ribbonOrbMenuItemNew.ToolTip = null;
+            this.ribbonOrbMenuItemNew.ToolTipImage = null;
             this.ribbonOrbMenuItemNew.Click += new System.EventHandler(this.ribbonButtonNew_Click);
             // 
             // ribbonOrbMenuItemOpen
@@ -254,6 +297,8 @@
             this.ribbonOrbMenuItemOpen.Name = "ribbonOrbMenuItemOpen";
             this.ribbonOrbMenuItemOpen.SmallImage = global::VeNote.Properties.Resources.folderopened_yellow;
             resources.ApplyResources(this.ribbonOrbMenuItemOpen, "ribbonOrbMenuItemOpen");
+            this.ribbonOrbMenuItemOpen.ToolTip = null;
+            this.ribbonOrbMenuItemOpen.ToolTipImage = null;
             this.ribbonOrbMenuItemOpen.Click += new System.EventHandler(this.ribbonButtonOpen_Click);
             // 
             // ribbonOrbMenuItemSave
@@ -264,6 +309,8 @@
             this.ribbonOrbMenuItemSave.Name = "ribbonOrbMenuItemSave";
             this.ribbonOrbMenuItemSave.SmallImage = global::VeNote.Properties.Resources.save;
             resources.ApplyResources(this.ribbonOrbMenuItemSave, "ribbonOrbMenuItemSave");
+            this.ribbonOrbMenuItemSave.ToolTip = null;
+            this.ribbonOrbMenuItemSave.ToolTipImage = null;
             this.ribbonOrbMenuItemSave.Click += new System.EventHandler(this.ribbonButtonSave_Click);
             // 
             // ribbonOrbMenuItemSettings
@@ -274,6 +321,8 @@
             this.ribbonOrbMenuItemSettings.Name = "ribbonOrbMenuItemSettings";
             this.ribbonOrbMenuItemSettings.SmallImage = global::VeNote.Properties.Resources.advancedsettings;
             resources.ApplyResources(this.ribbonOrbMenuItemSettings, "ribbonOrbMenuItemSettings");
+            this.ribbonOrbMenuItemSettings.ToolTip = null;
+            this.ribbonOrbMenuItemSettings.ToolTipImage = null;
             this.ribbonOrbMenuItemSettings.Click += new System.EventHandler(this.ribbonOrbMenuItemSettings_Click);
             // 
             // ribbonOrbMenuItemExit
@@ -284,6 +333,8 @@
             this.ribbonOrbMenuItemExit.Name = "ribbonOrbMenuItemExit";
             this.ribbonOrbMenuItemExit.SmallImage = global::VeNote.Properties.Resources.exit;
             resources.ApplyResources(this.ribbonOrbMenuItemExit, "ribbonOrbMenuItemExit");
+            this.ribbonOrbMenuItemExit.ToolTip = null;
+            this.ribbonOrbMenuItemExit.ToolTipImage = null;
             this.ribbonOrbMenuItemExit.Click += new System.EventHandler(this.ribbonOrbMenuItemExit_Click);
             // 
             // ribbonOrbOptionButton2
@@ -293,6 +344,8 @@
             this.ribbonOrbOptionButton2.Name = "ribbonOrbOptionButton2";
             this.ribbonOrbOptionButton2.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbOptionButton2.SmallImage")));
             resources.ApplyResources(this.ribbonOrbOptionButton2, "ribbonOrbOptionButton2");
+            this.ribbonOrbOptionButton2.ToolTip = null;
+            this.ribbonOrbOptionButton2.ToolTipImage = null;
             this.ribbonOrbOptionButton2.Click += new System.EventHandler(this.ribbonOrbOptionButton2_Click);
             // 
             // ribbonButtonNew
@@ -303,6 +356,8 @@
             this.ribbonButtonNew.Name = "ribbonButtonNew";
             this.ribbonButtonNew.SmallImage = global::VeNote.Properties.Resources.default_document1;
             resources.ApplyResources(this.ribbonButtonNew, "ribbonButtonNew");
+            this.ribbonButtonNew.ToolTip = null;
+            this.ribbonButtonNew.ToolTipImage = null;
             this.ribbonButtonNew.Click += new System.EventHandler(this.ribbonButtonNew_Click);
             // 
             // ribbonButtonSave
@@ -313,6 +368,8 @@
             this.ribbonButtonSave.Name = "ribbonButtonSave";
             this.ribbonButtonSave.SmallImage = global::VeNote.Properties.Resources.save16;
             resources.ApplyResources(this.ribbonButtonSave, "ribbonButtonSave");
+            this.ribbonButtonSave.ToolTip = null;
+            this.ribbonButtonSave.ToolTipImage = null;
             this.ribbonButtonSave.Click += new System.EventHandler(this.ribbonButtonSave_Click);
             // 
             // ribbonButtonOpen
@@ -323,6 +380,8 @@
             this.ribbonButtonOpen.Name = "ribbonButtonOpen";
             this.ribbonButtonOpen.SmallImage = global::VeNote.Properties.Resources.folderopened_yellow1;
             resources.ApplyResources(this.ribbonButtonOpen, "ribbonButtonOpen");
+            this.ribbonButtonOpen.ToolTip = null;
+            this.ribbonButtonOpen.ToolTipImage = null;
             this.ribbonButtonOpen.Click += new System.EventHandler(this.ribbonButtonOpen_Click);
             // 
             // ribbonOrbOptionButton1
@@ -332,13 +391,20 @@
             this.ribbonOrbOptionButton1.Name = "ribbonOrbOptionButton1";
             this.ribbonOrbOptionButton1.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonOrbOptionButton1.SmallImage")));
             resources.ApplyResources(this.ribbonOrbOptionButton1, "ribbonOrbOptionButton1");
+            this.ribbonOrbOptionButton1.ToolTip = null;
+            this.ribbonOrbOptionButton1.ToolTipImage = null;
             // 
             // Form1
             // 
+            this.AccessibleDescription = null;
+            this.AccessibleName = null;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = null;
             this.Controls.Add(this.richTextBoxClient);
             this.Controls.Add(this.ribbon1);
+            this.Font = null;
+            this.Icon = null;
             this.KeyPreview = true;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

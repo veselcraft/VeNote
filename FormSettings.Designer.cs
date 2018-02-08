@@ -59,7 +59,8 @@
             this.comboBox1.Items.AddRange(new object[] {
             resources.GetString("comboBox1.Items"),
             resources.GetString("comboBox1.Items1"),
-            resources.GetString("comboBox1.Items2")});
+            resources.GetString("comboBox1.Items2"),
+            resources.GetString("comboBox1.Items3")});
             this.comboBox1.Name = "comboBox1";
             // 
             // groupBox2

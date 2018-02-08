@@ -58,6 +58,14 @@ namespace VeNote
                     MessageBox.Show("Для застосування змін перезапустіть програму.", "VeNote");
                 }
             }
+            else if (comboBox1.SelectedIndex == 3)
+            {
+                if (inimanager.GetPrivateString("main", "language") != "be-BY")
+                {
+                    inimanager.WritePrivateString("main", "language", "be-BY");
+                    MessageBox.Show("Для прымянення змяненняў перазапусціце праграму.", "VeNote");
+                }
+            }
             this.Hide();
         }
 
@@ -95,6 +103,10 @@ namespace VeNote
             else if (inimanager.GetPrivateString("main", "language") == "uk-UA")
             {
                 comboBox1.SelectedIndex = 2;
+            }
+            else if (inimanager.GetPrivateString("main", "language") == "be-BY")
+            {
+                comboBox1.SelectedIndex = 3;
             }
             
         }
