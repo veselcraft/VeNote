@@ -117,542 +117,523 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>28, 21</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>144, 21</value>
+  </metadata>
+  <data name="openFileDialog1.Filter" xml:space="preserve">
+    <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
+  </data>
+  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>284, 21</value>
+  </metadata>
+  <data name="saveFileDialog1.Filter" xml:space="preserve">
+    <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="richTextBoxClient.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ribbonButtonFont.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAATSURBVDhPYxgFo2AUjAIwYGAAAAQQAAGnRHxjAAAAAElF
-        TkSuQmCC
-</value>
+  <data name="richTextBoxClient.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Console, 11.25pt</value>
   </data>
-  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
-    <value>openFileDialog1</value>
+  <data name="richTextBoxClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 140</value>
   </data>
-  <data name="&gt;&gt;ribbonTab1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonTab, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="richTextBoxClient.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>ForcedVertical</value>
   </data>
-  <data name="ribbonTab1.Text" xml:space="preserve">
-    <value>Главная</value>
-  </data>
-  <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
-    <value>fontDialog1</value>
-  </data>
-  <data name="&gt;&gt;ribbonTab1.Name" xml:space="preserve">
-    <value>ribbonTab1</value>
-  </data>
-  <data name="ribbonButtonFind.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
+  <data name="richTextBoxClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 217</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="richTextBoxClient.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="richTextBoxClient.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Console, 11.25pt</value>
-  </data>
-  <data name="ribbonButtonCopy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbonButtonSave.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Name" xml:space="preserve">
-    <value>ribbon1</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonUndo.Name" xml:space="preserve">
-    <value>ribbonButtonUndo</value>
-  </data>
-  <data name="&gt;&gt;ribbonSeparator1.Name" xml:space="preserve">
-    <value>ribbonSeparator1</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ribbon1.OrbDropDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>Inherit</value>
-  </data>
-  <data name="ribbonButtonPaste.Text" xml:space="preserve">
-    <value>Вставить</value>
-  </data>
-  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="richTextBoxClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 217</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonCut.Name" xml:space="preserve">
-    <value>ribbonButtonCut</value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>531, 357</value>
-  </data>
-  <data name="ribbon1.QuickAccessToolbar.Text" xml:space="preserve">
+  <data name="richTextBoxClient.Text" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemExit.Name" xml:space="preserve">
-    <value>ribbonOrbMenuItemExit</value>
-  </data>
-  <data name="ribbonButtonRedo.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbonButtonFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbonButtonNew.Text" xml:space="preserve">
-    <value>Новый документ</value>
-  </data>
-  <data name="ribbonOrbMenuItemSettings.Text" xml:space="preserve">
-    <value>Настройки</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemExit.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbonOrbMenuItemSave.Text" xml:space="preserve">
-    <value>Сохранить</value>
-  </data>
-  <data name="ribbonButtonRedo.Text" xml:space="preserve">
-    <value>Вернуть</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonCopy.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonSeparator2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonSeparator, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbon1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>VeNote</value>
-  </data>
-  <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxClient.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="saveFileDialog1.Filter" xml:space="preserve">
-    <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
-  </data>
-  <data name="&gt;&gt;ribbonSeparator2.Name" xml:space="preserve">
-    <value>ribbonSeparator2</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="ribbonOrbMenuItemOpen.Text" xml:space="preserve">
-    <value>Открыть</value>
-  </data>
-  <data name="&gt;&gt;ribbonSeparator1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonSeparator, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonFind.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ribbonPanel1.Text" xml:space="preserve">
-    <value>Буфер обмена</value>
-  </data>
-  <data name="ribbonPanel3.Text" xml:space="preserve">
-    <value>Редактрование</value>
-  </data>
-  <data name="ribbonButtonCut.Text" xml:space="preserve">
-    <value>Вырезать</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonSave.Name" xml:space="preserve">
-    <value>ribbonButtonSave</value>
-  </data>
-  <data name="&gt;&gt;ribbonPanel3.Name" xml:space="preserve">
-    <value>ribbonPanel3</value>
-  </data>
-  <data name="ribbonButtonOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonCut.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbon1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 140</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonCopy.Name" xml:space="preserve">
-    <value>ribbonButtonCopy</value>
-  </data>
-  <data name="ribbonButtonSelectAll.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Ribbon, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbonButtonNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbonButtonOpen.Text" xml:space="preserve">
-    <value>Открыть</value>
-  </data>
-  <data name="ribbonButtonNew.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonSelectAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbonButtonSelectAll.Text" xml:space="preserve">
-    <value>Выбрать всё</value>
-  </data>
-  <data name="ribbon1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="ribbonPanel2.Text" xml:space="preserve">
-    <value>Форматирование</value>
-  </data>
-  <data name="ribbonButtonOpen.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
   </data>
   <data name="&gt;&gt;richTextBoxClient.Name" xml:space="preserve">
     <value>richTextBoxClient</value>
   </data>
-  <data name="ribbon1.OrbDropDown.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
+  <data name="&gt;&gt;richTextBoxClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ribbonButtonUndo.Text" xml:space="preserve">
-    <value>Отменить</value>
+  <data name="&gt;&gt;richTextBoxClient.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="richTextBoxClient.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
-    <value>ForcedVertical</value>
+  <data name="&gt;&gt;richTextBoxClient.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="ribbonButtonSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonButtonPaste.Text" xml:space="preserve">
+    <value>Вставить</value>
+  </data>
+  <data name="ribbonButtonCopy.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
 </value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbOptionButton2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbOptionButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="ribbonButtonCopy.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonCopy.Text" xml:space="preserve">
+    <value>Копировать</value>
+  </data>
+  <data name="ribbonButtonCut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonCut.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonCut.Text" xml:space="preserve">
+    <value>Вырезать</value>
+  </data>
+  <data name="ribbonPanel1.Text" xml:space="preserve">
+    <value>Буфер обмена</value>
+  </data>
+  <data name="ribbonButtonFont.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ribbonButtonFont.Text" xml:space="preserve">
     <value>Шрифт</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Form1</value>
+  <data name="ribbonPanel2.Text" xml:space="preserve">
+    <value>Форматирование</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonFont.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbOptionButton1.Name" xml:space="preserve">
-    <value>ribbonOrbOptionButton1</value>
-  </data>
-  <data name="ribbonButtonRedo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonButtonFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonFind.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="ribbonButtonFind.Text" xml:space="preserve">
     <value>Найти</value>
   </data>
-  <data name="ribbonButtonCopy.Text" xml:space="preserve">
-    <value>Копировать</value>
+  <data name="ribbonButtonSelectAll.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonPaste.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="ribbonButtonSelectAll.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonSelectAll.Text" xml:space="preserve">
+    <value>Выбрать всё</value>
+  </data>
+  <data name="ribbonButtonUndo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonUndo.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonUndo.Text" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ribbonButtonRedo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonRedo.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonRedo.Text" xml:space="preserve">
+    <value>Вернуть</value>
+  </data>
+  <data name="ribbonPanel3.Text" xml:space="preserve">
+    <value>Редактрование</value>
+  </data>
+  <data name="ribbonTab1.Text" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="ribbon1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="ribbon1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbon1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ribbon1.OrbDropDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ribbonOrbMenuItemNew.Text" xml:space="preserve">
+    <value>Новый документ</value>
+  </data>
+  <data name="ribbonOrbMenuItemOpen.Text" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="ribbonOrbMenuItemSave.Text" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="ribbonOrbMenuItemSettings.Text" xml:space="preserve">
+    <value>Настройки</value>
   </data>
   <data name="ribbonOrbMenuItemExit.Text" xml:space="preserve">
     <value>Выход</value>
   </data>
-  <data name="&gt;&gt;ribbonOrbOptionButton1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbOptionButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>527, 295</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemNew.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxClient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemSettings.Name" xml:space="preserve">
-    <value>ribbonOrbMenuItemSettings</value>
-  </data>
-  <data name="openFileDialog1.Filter" xml:space="preserve">
-    <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonUndo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonOpen.Name" xml:space="preserve">
-    <value>ribbonButtonOpen</value>
-  </data>
-  <data name="ribbonButtonSelectAll.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonOrbOptionButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ribbonOrbOptionButton1.Text" xml:space="preserve">
-    <value>О программе</value>
-  </data>
-  <data name="&gt;&gt;richTextBoxClient.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="ribbonButtonCut.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonOrbOptionButton2.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="ribbon1.OrbDropDown.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonForm, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemOpen.Name" xml:space="preserve">
-    <value>ribbonOrbMenuItemOpen</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonFont.Name" xml:space="preserve">
-    <value>ribbonButtonFont</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonFind.Name" xml:space="preserve">
-    <value>ribbonButtonFind</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbOptionButton2.Name" xml:space="preserve">
-    <value>ribbonOrbOptionButton2</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="richTextBoxClient.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 140</value>
-  </data>
-  <data name="ribbonButtonUndo.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonOrbOptionButton2.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbonOrbOptionButton1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAATSURBVDhPYxgFo2AUjAIwYGAAAAQQAAGnRHxjAAAAAElF
-        TkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="ribbonOrbOptionButton2.Text" xml:space="preserve">
     <value>О программе</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonNew.Name" xml:space="preserve">
-    <value>ribbonButtonNew</value>
+  <data name="ribbon1.OrbDropDown.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonRedo.Name" xml:space="preserve">
-    <value>ribbonButtonRedo</value>
+  <data name="ribbon1.OrbDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>527, 295</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonSelectAll.Name" xml:space="preserve">
-    <value>ribbonButtonSelectAll</value>
+  <data name="ribbon1.OrbDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemNew.Name" xml:space="preserve">
-    <value>ribbonOrbMenuItemNew</value>
-  </data>
-  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="ribbon1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="ribbon1.Text" xml:space="preserve">
-    <value>ribbon1</value>
-  </data>
-  <data name="&gt;&gt;ribbonPanel2.Name" xml:space="preserve">
-    <value>ribbonPanel2</value>
-  </data>
-  <data name="ribbonOrbOptionButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="ribbonButtonNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonNew.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonNew.Text" xml:space="preserve">
+    <value>Новый документ</value>
+  </data>
+  <data name="ribbonButtonSave.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButtonSave.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="ribbonButtonSave.Text" xml:space="preserve">
     <value>Открыть</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonOpen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="ribbonButtonOpen.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="ribbon1.OrbDropDown.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
+  <data name="ribbonButtonOpen.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemSave.Name" xml:space="preserve">
-    <value>ribbonOrbMenuItemSave</value>
+  <data name="ribbonButtonOpen.Text" xml:space="preserve">
+    <value>Открыть</value>
   </data>
-  <data name="ribbon1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
+  <data name="ribbonButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
   </data>
-  <data name="&gt;&gt;ribbonButtonPaste.Name" xml:space="preserve">
-    <value>ribbonButtonPaste</value>
+  <data name="ribbonButton1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonButton1.Text" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="ribbon1.QuickAccessToolbar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ribbon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 140</value>
+  </data>
+  <data name="ribbon1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ribbon1.Text" xml:space="preserve">
+    <value>ribbon1</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Name" xml:space="preserve">
+    <value>ribbon1</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Ribbon, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ribbonOrbOptionButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonOrbOptionButton1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABpJREFUWEftwQEBAAAAgiD/r25IQAAAAMC5GhAgAAGdeElDAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="ribbonOrbOptionButton1.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="ribbonOrbOptionButton1.Text" xml:space="preserve">
+    <value>О программе</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>47</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>531, 357</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>VeNote</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Name" xml:space="preserve">
+    <value>fontDialog1</value>
+  </data>
+  <data name="&gt;&gt;fontDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FontDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;saveFileDialog1.Name" xml:space="preserve">
     <value>saveFileDialog1</value>
   </data>
-  <data name="&gt;&gt;ribbonPanel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonPanel, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;saveFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SaveFileDialog, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ribbonOrbOptionButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;ribbonTab1.Name" xml:space="preserve">
+    <value>ribbonTab1</value>
   </data>
-  <data name="richTextBoxClient.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ribbonButtonCut.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="&gt;&gt;ribbonButtonRedo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;ribbonPanel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonPanel, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbonOrbMenuItemSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="ribbonOrbOptionButton2.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAATSURBVDhPYxgFo2AUjAIwYGAAAAQQAAGnRHxjAAAAAElF
-        TkSuQmCC
-</value>
-  </data>
-  <data name="richTextBoxClient.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ribbon1.OrbDropDown.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="ribbonOrbOptionButton2.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ribbonOrbMenuItemNew.Text" xml:space="preserve">
-    <value>Новый документ</value>
+  <data name="&gt;&gt;ribbonTab1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonTab, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;ribbonPanel1.Name" xml:space="preserve">
     <value>ribbonPanel1</value>
   </data>
-  <data name="ribbonOrbOptionButton1.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;ribbonPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonPanel, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="ribbonButtonUndo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAAAaSURBVFhH7cEBAQAAAIIg/69uSEAAAADAuRoQIAABnXhJ
-        QwAAAABJRU5ErkJggg==
-</value>
+  <data name="&gt;&gt;ribbonButtonPaste.Name" xml:space="preserve">
+    <value>ribbonButtonPaste</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonPaste.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonCopy.Name" xml:space="preserve">
+    <value>ribbonButtonCopy</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonCopy.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonCut.Name" xml:space="preserve">
+    <value>ribbonButtonCut</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonCut.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonPanel2.Name" xml:space="preserve">
+    <value>ribbonPanel2</value>
   </data>
   <data name="&gt;&gt;ribbonPanel2.Type" xml:space="preserve">
     <value>System.Windows.Forms.RibbonPanel, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>47</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>144, 21</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>284, 21</value>
-  </metadata>
-  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>28, 21</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>Belarusian (Belarus)</value>
-  </metadata>
+  <data name="&gt;&gt;ribbonButtonFont.Name" xml:space="preserve">
+    <value>ribbonButtonFont</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonFont.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonPanel3.Name" xml:space="preserve">
+    <value>ribbonPanel3</value>
+  </data>
+  <data name="&gt;&gt;ribbonPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonPanel, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonFind.Name" xml:space="preserve">
+    <value>ribbonButtonFind</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonFind.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonSelectAll.Name" xml:space="preserve">
+    <value>ribbonButtonSelectAll</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonSelectAll.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonSeparator2.Name" xml:space="preserve">
+    <value>ribbonSeparator2</value>
+  </data>
+  <data name="&gt;&gt;ribbonSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonSeparator, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonUndo.Name" xml:space="preserve">
+    <value>ribbonButtonUndo</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonUndo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonRedo.Name" xml:space="preserve">
+    <value>ribbonButtonRedo</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonRedo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonSeparator1.Name" xml:space="preserve">
+    <value>ribbonSeparator1</value>
+  </data>
+  <data name="&gt;&gt;ribbonSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonSeparator, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemNew.Name" xml:space="preserve">
+    <value>ribbonOrbMenuItemNew</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemOpen.Name" xml:space="preserve">
+    <value>ribbonOrbMenuItemOpen</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemSave.Name" xml:space="preserve">
+    <value>ribbonOrbMenuItemSave</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemSettings.Name" xml:space="preserve">
+    <value>ribbonOrbMenuItemSettings</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemExit.Name" xml:space="preserve">
+    <value>ribbonOrbMenuItemExit</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbMenuItemExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbMenuItem, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbOptionButton2.Name" xml:space="preserve">
+    <value>ribbonOrbOptionButton2</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbOptionButton2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbOptionButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonNew.Name" xml:space="preserve">
+    <value>ribbonButtonNew</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonNew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonSave.Name" xml:space="preserve">
+    <value>ribbonButtonSave</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonOpen.Name" xml:space="preserve">
+    <value>ribbonButtonOpen</value>
+  </data>
+  <data name="&gt;&gt;ribbonButtonOpen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonButton1.Name" xml:space="preserve">
+    <value>ribbonButton1</value>
+  </data>
+  <data name="&gt;&gt;ribbonButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbOptionButton1.Name" xml:space="preserve">
+    <value>ribbonOrbOptionButton1</value>
+  </data>
+  <data name="&gt;&gt;ribbonOrbOptionButton1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonOrbOptionButton, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RibbonForm, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
 </root>

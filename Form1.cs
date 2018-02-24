@@ -10,6 +10,8 @@ using INIManager = VeNote.INIManager;
 using System.IO;
 using System.Globalization;
 using System.Threading;
+using System.Net;
+using System.Diagnostics;
 
 namespace VeNote
 {
@@ -18,37 +20,72 @@ namespace VeNote
         INIManager inimanager = new INIManager(Directory.GetCurrentDirectory() + "\\settings.ini");
         string[] arg;
         string SaveDocumentQuestionString;
+        string UpdateMessageString;
         public Form1(string[] args)
         {
-            if (inimanager.GetPrivateString("main", "language") == "en-US")
+            switch (inimanager.GetPrivateString("main", "language"))
             {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en-US");
-            }
-            else if (inimanager.GetPrivateString("main", "language") == "ru-RU")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru-RU");
-            }
-            else if (inimanager.GetPrivateString("main", "language") == "uk-UA")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("uk-UA");
-            }
-            else if (inimanager.GetPrivateString("main", "language") == "be-BY")
-            {
-                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("be-BY");
+                case "en-US":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
+                    
+                    break;
+                case "ru-RU":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru-RU");
+                    break;
+                case "uk-UA":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("uk-UA");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("uk-UA");
+                    break;
+                case "be-BY":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("be-BY");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("be-BY");
+                    break;
+
             }
 
             InitializeComponent();
             arg = args;
         }
 
+        public static string GetUpdate()
+        {
+            string version = Application.ProductVersion;
+            string url = "http://veselcraft.ru/api/CheckUpdates.php?product=" + Application.ProductName;
+            string versionActually;
+
+            using (var webCheckUpdate = new WebClient())
+            {
+                Stream data = webCheckUpdate.OpenRead(url);
+                StreamReader reader = new StreamReader(data);
+                versionActually = reader.ReadToEnd();
+            }
+                return versionActually;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            switch (inimanager.GetPrivateString("main", "style"))
+            {
+                case "office2007":
+                    ribbon1.OrbStyle = RibbonOrbStyle.Office_2007;
+                    ribbon1.OrbImage = VeNote.Properties.Resources.logo;
+                    break;
+                case "office2010":
+                    ribbon1.OrbStyle = RibbonOrbStyle.Office_2010;
+                    ribbon1.OrbImage = null;
+                    break;
+                case "office2013":
+                    ribbon1.OrbStyle = RibbonOrbStyle.Office_2013;
+                    ribbon1.OrbImage = null;
+                    break;
+            }
             if (inimanager.GetPrivateString("main", "font") != null)
             {
                 var cvt = new FontConverter();
                 Font f = cvt.ConvertFromString(inimanager.GetPrivateString("main", "font")) as Font;
                 richTextBoxClient.Font = f;
-                //this.richTextBoxClient.Font = new Font(f, float.Parse(inimanager.GetPrivateString("main", "fontsize"), CultureInfo.InvariantCulture.NumberFormat), this.richTextBoxClient.Font.Style);
             }
             if (arg.Length != 0)
             {
@@ -56,12 +93,22 @@ namespace VeNote
                 this.Text = arg[0] + "  -  VeNote";
 
             }
-            if (inimanager.GetPrivateString("main", "wordwrap") != "0")
+            if (inimanager.GetPrivateString("main", "wordwrap") == "0")
             {
                 richTextBoxClient.WordWrap = false;
                 richTextBoxClient.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
             }
-            if (inimanager.GetPrivateString("window", "locationx") != null)
+            else if (inimanager.GetPrivateString("main", "wordwrap") == "1")
+            {
+                richTextBoxClient.WordWrap = true;
+                richTextBoxClient.ScrollBars = RichTextBoxScrollBars.ForcedVertical;
+            }
+            else
+            {
+                richTextBoxClient.WordWrap = false;
+                richTextBoxClient.ScrollBars = RichTextBoxScrollBars.ForcedVertical;
+            }
+            if (inimanager.GetPrivateString("window", "locationx") != "")
             {
                 this.Location = new Point(
                         Convert.ToInt32(inimanager.GetPrivateString("window", "locationx")),
@@ -73,6 +120,32 @@ namespace VeNote
                 );
 
             }
+            switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
+            {
+                case "en-US":
+                    UpdateMessageString = "The update was released. Download?";
+                    break;
+                case "uk-UA":
+                    UpdateMessageString = "Вийшло оновлення. Завантажити?";
+                    break;
+                case "ru-RU":
+                    UpdateMessageString = "Вышло обновление. Скачать?";
+                    break;
+                case "be-BY":
+                    UpdateMessageString = "Выйшла абнаўленне. Скачать?";
+                    break;
+            }
+            if (inimanager.GetPrivateString("main", "CheckUpdates") == "1")
+            {
+                if (GetUpdate() != "3.0.3.0")
+                {
+                    if (MessageBox.Show(UpdateMessageString + " (" + GetUpdate() + ")", "VeNote", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        Process.Start("http://veselcraft.ru/post.php?id=8");
+                    }
+                }
+            }
+            
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -224,10 +297,6 @@ namespace VeNote
                         
                     }
                 }
-                else if (SaveDocumentQuestion == DialogResult.No)
-                {
-                    
-                }
                 else if (SaveDocumentQuestion == DialogResult.Cancel)
                 {
                     e.Cancel = true;
@@ -261,6 +330,22 @@ namespace VeNote
                     {
                         richTextBoxClient.ScrollBars = RichTextBoxScrollBars.ForcedBoth;
                         richTextBoxClient.WordWrap = false;
+                    }
+
+                    if (fs.styleribbon == "office2007")
+                    {
+                        ribbon1.OrbStyle = RibbonOrbStyle.Office_2007;
+                        ribbon1.OrbImage = VeNote.Properties.Resources.logo;
+                    }
+                    else if (fs.styleribbon == "office2010")
+                    {
+                        ribbon1.OrbStyle = RibbonOrbStyle.Office_2010;
+                        ribbon1.OrbImage = null;
+                    }
+                    else if (fs.styleribbon == "office2013")
+                    {
+                        ribbon1.OrbStyle = RibbonOrbStyle.Office_2013;
+                        ribbon1.OrbImage = null;
                     }
                 }
             }
@@ -306,14 +391,45 @@ namespace VeNote
                     Application.Exit();
                 }
             }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void ribbonOrbOptionButton2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("VeNote 3.0.2 alpha\nRibbon панель создана с помощью библиотеки: https://github.com/RibbonWinForms/RibbonWinForms\nПеракладзена на беларускую мову Даніілам Мысливицом\nVeselcraft.ru 2018",
-                            "VeNote",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            AboutBox ab = new AboutBox();
+            ab.ShowDialog();
+        }
+        int findResult;
+        private void ribbonButtonFind_Click(object sender, EventArgs e)
+        {
+            using (FormFind ff = new FormFind())
+            {
+                if (ff.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    if (!string.IsNullOrEmpty(ff.lineword))
+                    {
+                        
+
+                        switch (ff.finduprodown)
+                        {
+                            case 0:
+                                findResult = richTextBoxClient.Find(ff.lineword);
+                                break;
+                            case 1:
+                                findResult = richTextBoxClient.Find(ff.lineword);
+                                break;
+                        }
+                        if (findResult == -1)
+                        {
+                            MessageBox.Show("Слово не найдено");
+                        }
+
+                    }
+                }
+            }
         }
     }
 }

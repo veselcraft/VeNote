@@ -119,36 +119,27 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 13</value>
+    <value>26, 13</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
-    <value>Language:</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Appearance</value>
-  </data>
-  <data name="checkBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 17</value>
-  </data>
-  <data name="checkBox2.Text" xml:space="preserve">
-    <value>Check for updates</value>
-  </data>
-  <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
-  </data>
-  <data name="checkBox1.Text" xml:space="preserve">
-    <value>Word wrap</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Main</value>
+    <value>Що:</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
-    <value>Save</value>
+    <value>Знайти</value>
   </data>
   <data name="button2.Text" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Сказувати</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Звідки</value>
+  </data>
+  <data name="radioButton2.Text" xml:space="preserve">
+    <value>Знизу</value>
+  </data>
+  <data name="radioButton1.Text" xml:space="preserve">
+    <value>Зверху</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Settings</value>
+    <value>Знайти</value>
   </data>
 </root>

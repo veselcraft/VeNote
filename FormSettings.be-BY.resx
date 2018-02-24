@@ -117,18 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Стыль:</value>
+  </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>Знешнi выгляд</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Аснаўныя</value>
+  <data name="checkBox2.Text" xml:space="preserve">
+    <value>Правяраць абнаўлення</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="checkBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 17</value>
   </data>
   <data name="checkBox1.Text" xml:space="preserve">
     <value>Перанос слоў</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Аснаўныя</value>
   </data>
   <data name="button1.Text" xml:space="preserve">
     <value>Сахранить</value>
