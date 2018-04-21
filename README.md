@@ -1,6 +1,6 @@
 # VeNote 3.0
-![Image](http://veselcraft.ru/images/venote3.png)
 **New re-created VeNote 3.0.**
+
 **Новый пересозданный VeNote 3.0.**
 
 *[Can run on Ubuntu.](https://github.com/veselcraft/VeNote/blob/master/LINUX.md)*
