@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("VeNote")]
-[assembly: AssemblyDescription("Notepad clone written on C#")]
+[assembly: AssemblyDescription("Simple notepad written on C#")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("veselcraft.ru")]
 [assembly: AssemblyProduct("VeNote")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright © 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("3.0.3.0")]
-[assembly: AssemblyFileVersion("3.0.3.0")]
+[assembly: AssemblyVersion("3.0.3.2")]
+[assembly: AssemblyFileVersion("3.0.3.2")]

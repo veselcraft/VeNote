@@ -12,15 +12,18 @@ using System.Globalization;
 using System.Threading;
 using System.Net;
 using System.Diagnostics;
+using Newtonsoft.Json;
 
 namespace VeNote
 {
     public partial class Form1 : RibbonForm
     {
-        INIManager inimanager = new INIManager(Directory.GetCurrentDirectory() + "\\settings.ini");
+        static string exeasmb = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+        INIManager inimanager = new INIManager(exeasmb + "\\settings.ini");
         string[] arg;
         string SaveDocumentQuestionString;
         string UpdateMessageString;
+        string originaltextstr;
         public Form1(string[] args)
         {
             switch (inimanager.GetPrivateString("main", "language"))
@@ -28,7 +31,6 @@ namespace VeNote
                 case "en-US":
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-                    
                     break;
                 case "ru-RU":
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
@@ -52,16 +54,22 @@ namespace VeNote
         public static string GetUpdate()
         {
             string version = Application.ProductVersion;
-            string url = "http://veselcraft.ru/api/CheckUpdates.php?product=" + Application.ProductName;
+            string url = "http://veselcraft.ru/checkUpdates.php?product=" + Application.ProductName;
             string versionActually;
 
             using (var webCheckUpdate = new WebClient())
             {
+                webCheckUpdate.Headers.Add("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; VeNote " + Application.ProductVersion + ")");
                 Stream data = webCheckUpdate.OpenRead(url);
                 StreamReader reader = new StreamReader(data);
                 versionActually = reader.ReadToEnd();
             }
                 return versionActually;
+        }
+
+        private void OriginalText()  // Костыль, чтобы можно было выйти из программы, если только что открытый текст никак не изменялся
+        {
+            originaltextstr = richTextBoxClient.Text;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -137,11 +145,14 @@ namespace VeNote
             }
             if (inimanager.GetPrivateString("main", "CheckUpdates") == "1")
             {
-                if (GetUpdate() != "3.0.3.0")
+
+                string updateStr = GetUpdate();
+                UpdateJson updj = JsonConvert.DeserializeObject<UpdateJson>(updateStr);
+                if (updj.version != Application.ProductVersion)
                 {
-                    if (MessageBox.Show(UpdateMessageString + " (" + GetUpdate() + ")", "VeNote", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show(UpdateMessageString + " (" + updj.version + ")", "VeNote", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        Process.Start("http://veselcraft.ru/post.php?id=8");
+                        Process.Start(updj.link);
                     }
                 }
             }
@@ -157,7 +168,7 @@ namespace VeNote
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                 this.Text = openFileDialog1.FileName;
             }
         }
@@ -189,9 +200,8 @@ namespace VeNote
 
         private void ribbonButtonNew_Click(object sender, EventArgs e)
         {
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Text == originaltextstr)
             {
-                
                 switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
                 {
                     case "en-US":
@@ -215,7 +225,7 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                         this.Text = "VeNote";
                         richTextBoxClient.Text = "";
                     }
@@ -232,7 +242,7 @@ namespace VeNote
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                 this.Text = openFileDialog1.FileName + "  -  VeNote";
             }
         }
@@ -242,7 +252,7 @@ namespace VeNote
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                 this.Text = saveFileDialog1.FileName + "  -  VeNote";
             }
         }
@@ -251,7 +261,7 @@ namespace VeNote
         {
             if (fontDialog1.ShowDialog() == DialogResult.OK) 
             {
-                richTextBoxClient.SelectionFont = fontDialog1.Font;
+                richTextBoxClient.Font = fontDialog1.Font;
                 var cvt = new FontConverter();
                 string fontSetting = cvt.ConvertToString(fontDialog1.Font);
                 inimanager.WritePrivateString("main", "font", fontSetting);
@@ -265,7 +275,7 @@ namespace VeNote
             inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
             inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
             inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Text == originaltextstr)
             {
                 switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
                 {
@@ -293,8 +303,8 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
-                        
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
+                        Application.Exit();
                     }
                 }
                 else if (SaveDocumentQuestion == DialogResult.Cancel)
@@ -348,6 +358,7 @@ namespace VeNote
                         ribbon1.OrbImage = null;
                     }
                 }
+                this.Activate();
             }
         }
 
@@ -357,7 +368,7 @@ namespace VeNote
             inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
             inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
             inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Text == originaltextstr)
             {
                 switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
                 {
@@ -382,7 +393,7 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                         Application.Exit();
                     }
                 }
@@ -432,4 +443,11 @@ namespace VeNote
             }
         }
     }
+
+    class UpdateJson
+    {
+        public string version { get; set; }
+        public string link { get; set; }
+    }
 }
+

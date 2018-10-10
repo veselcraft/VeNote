@@ -117,17 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="textBoxDescription.Text" xml:space="preserve">
-    <value>VeNote - Notepad written on c#
-Ribbon panel created with https://github.com/RibbonWinForms/RibbonWinForms
-
-Languages:
-English - Veselcraft
-Русский - Veselcraft
-Україньска - Veselcraft
-Беларускi - Даниил Мысливец
-</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="logoPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -610,5 +599,16 @@ English - Veselcraft
         ipcU73XhimscoJ7nmkq/K3pARbMxQSFYLIVi2aW4L35fP8fS4CSscnUDZfV/BZrfFf2jFa0A/vv6hdfP
         cJWw3xX9u6JfoPW7on9X9Ku1flf074p+tdbviv5d0a/S+r//+/8BPTxUq6Ub7iwAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="textBoxDescription.Text" xml:space="preserve">
+    <value>VeNote - Notepad written on c#
+Ribbon panel created with https://github.com/RibbonWinForms/RibbonWinForms
+
+Languages:
+English - Veselcraft
+Русский - Veselcraft
+Україньска - Veselcraft
+Беларускi - Даниил Мысливец
+Кристина, если ты это читаешь, то переведи это на Казахский~~~</value>
   </data>
 </root>
