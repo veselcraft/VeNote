@@ -357,4 +357,13 @@
   <data name="ribbonOrbOptionButton2" xml:space="preserve">
     <value>Про програму</value>
   </data>
+  <data name="SaveDocumentQuestionString" xml:space="preserve">
+    <value>Ви хочете зберегти документ?</value>
+  </data>
+  <data name="UpdateMessageString" xml:space="preserve">
+    <value>Вийшло оновлення. Завантажити?</value>
+  </data>
+  <data name="WordNotFoundString" xml:space="preserve">
+    <value>Слово не знайдено</value>
+  </data>
 </root>

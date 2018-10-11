@@ -72,6 +72,7 @@
             // richTextBoxClient
             // 
             this.richTextBoxClient.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxClient.DetectUrls = false;
             resources.ApplyResources(this.richTextBoxClient, "richTextBoxClient");
             this.richTextBoxClient.Name = "richTextBoxClient";
             this.richTextBoxClient.TextChanged += new System.EventHandler(this.richTextBoxClient_TextChanged);
@@ -175,6 +176,7 @@
             // 
             // ribbonSeparator2
             // 
+            this.ribbonSeparator2.DropDownWidth = System.Windows.Forms.RibbonSeparatorDropDownWidth.Partial;
             this.ribbonSeparator2.Name = "ribbonSeparator2";
             // 
             // ribbonButtonUndo
@@ -199,6 +201,7 @@
             // 
             // ribbonSeparator1
             // 
+            this.ribbonSeparator1.DropDownWidth = System.Windows.Forms.RibbonSeparatorDropDownWidth.Partial;
             this.ribbonSeparator1.Name = "ribbonSeparator1";
             // 
             // ribbon1
@@ -352,8 +355,8 @@
             this.Controls.Add(this.ribbon1);
             this.KeyPreview = true;
             this.Name = "Form1";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.ResumeLayout(false);
 
         }

@@ -138,7 +138,10 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="richTextBoxClient.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Lucida Console, 11.25pt</value>
+    <value>Consolas, 11.25pt</value>
+  </data>
+  <data name="richTextBoxClient.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="richTextBoxClient.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 140</value>
@@ -167,6 +170,18 @@
   </data>
   <data name="&gt;&gt;richTextBoxClient.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="ribbonPanel1.Text" xml:space="preserve">
+    <value>Буфер обмена</value>
+  </data>
+  <data name="ribbonPanel2.Text" xml:space="preserve">
+    <value>Форматирование</value>
+  </data>
+  <data name="ribbonPanel3.Text" xml:space="preserve">
+    <value>Редактрование</value>
+  </data>
+  <data name="ribbonTab1.Text" xml:space="preserve">
+    <value>Главная</value>
   </data>
   <data name="ribbonButtonPaste.Text" xml:space="preserve">
     <value>Вставить</value>
@@ -201,9 +216,6 @@
   <data name="ribbonButtonCut.Text" xml:space="preserve">
     <value>Вырезать</value>
   </data>
-  <data name="ribbonPanel1.Text" xml:space="preserve">
-    <value>Буфер обмена</value>
-  </data>
   <data name="ribbonButtonFont.SmallImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -212,9 +224,6 @@
   </data>
   <data name="ribbonButtonFont.Text" xml:space="preserve">
     <value>Шрифт</value>
-  </data>
-  <data name="ribbonPanel2.Text" xml:space="preserve">
-    <value>Форматирование</value>
   </data>
   <data name="ribbonButtonFind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -276,12 +285,6 @@
   <data name="ribbonButtonRedo.Text" xml:space="preserve">
     <value>Вернуть</value>
   </data>
-  <data name="ribbonPanel3.Text" xml:space="preserve">
-    <value>Редактрование</value>
-  </data>
-  <data name="ribbonTab1.Text" xml:space="preserve">
-    <value>Главная</value>
-  </data>
   <data name="ribbon1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
@@ -293,6 +296,39 @@
   </data>
   <data name="ribbon1.OrbDropDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
+  </data>
+  <data name="ribbon1.OrbDropDown.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="ribbon1.OrbDropDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>527, 295</value>
+  </data>
+  <data name="ribbon1.OrbDropDown.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ribbon1.QuickAccessToolbar.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ribbon1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>531, 140</value>
+  </data>
+  <data name="ribbon1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ribbon1.Text" xml:space="preserve">
+    <value>ribbon1</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Name" xml:space="preserve">
+    <value>ribbon1</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Ribbon, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ribbon1.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="ribbonOrbMenuItemNew.Text" xml:space="preserve">
     <value>Новый документ</value>
@@ -329,15 +365,6 @@
   </data>
   <data name="ribbonOrbOptionButton2.Text" xml:space="preserve">
     <value>О программе</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Yes</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>527, 295</value>
-  </data>
-  <data name="ribbon1.OrbDropDown.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="ribbonButtonNew.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -398,30 +425,6 @@
   </data>
   <data name="ribbonButton1.Text" xml:space="preserve">
     <value>Отменить</value>
-  </data>
-  <data name="ribbon1.QuickAccessToolbar.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="ribbon1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>531, 140</value>
-  </data>
-  <data name="ribbon1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="ribbon1.Text" xml:space="preserve">
-    <value>ribbon1</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Name" xml:space="preserve">
-    <value>ribbon1</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Ribbon, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ribbon1.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="ribbonOrbOptionButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

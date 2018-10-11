@@ -117,62 +117,100 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="copy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\copy.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonCopy.Text" xml:space="preserve">
+    <value>コピー</value>
+    <comment>Copy</comment>
   </data>
-  <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonCut.Text" xml:space="preserve">
+    <value>切り取る</value>
+    <comment>Cut</comment>
   </data>
-  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonFind.Text" xml:space="preserve">
+    <value>検索</value>
+    <comment>Find</comment>
   </data>
-  <data name="advancedsettings" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\advancedsettings.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonFont.Text" xml:space="preserve">
+    <value>フォント</value>
+    <comment>Font</comment>
   </data>
-  <data name="default_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_document.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonNew.Text" xml:space="preserve">
+    <value>新しい文書</value>
+    <comment>New document</comment>
   </data>
-  <data name="default_document1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_document1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonOpen.Text" xml:space="preserve">
+    <value>開いた</value>
+    <comment>Open</comment>
   </data>
-  <data name="paste1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\paste1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonPaste.Text" xml:space="preserve">
+    <value>挿入</value>
+    <comment>Paste</comment>
   </data>
-  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\redo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonRedo.Text" xml:space="preserve">
+    <value>やり直し</value>
+    <comment>Redo</comment>
   </data>
-  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\undo.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonSave.Text" xml:space="preserve">
+    <value>セーブ</value>
+    <comment>Save</comment>
   </data>
-  <data name="cursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cursor.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonSelectAll.Text" xml:space="preserve">
+    <value>すべて選択</value>
+    <comment>Select All</comment>
   </data>
-  <data name="default_document3232" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\default_document3232.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonButtonUndo.Text" xml:space="preserve">
+    <value>元に戻す</value>
+    <comment>Undo</comment>
   </data>
-  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbMenuItemExit.Text" xml:space="preserve">
+    <value>出口</value>
+    <comment>Exit</comment>
   </data>
-  <data name="system_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\system_search.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbMenuItemNew.Text" xml:space="preserve">
+    <value>新しい文書</value>
+    <comment>New document</comment>
   </data>
-  <data name="save16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\save16.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbMenuItemOpen.Text" xml:space="preserve">
+    <value>開いた</value>
+    <comment>Open</comment>
   </data>
-  <data name="font" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\font.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbMenuItemSave.Text" xml:space="preserve">
+    <value>セーブ</value>
+    <comment>Save</comment>
   </data>
-  <data name="folderopened_yellow1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\folderopened_yellow1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbMenuItemSettings.Text" xml:space="preserve">
+    <value>設定</value>
+    <comment>Settings</comment>
   </data>
-  <data name="cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cut.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonOrbOptionButton2.Text" xml:space="preserve">
+    <value>約</value>
+    <comment>About</comment>
   </data>
-  <data name="folderopened_yellow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\folderopened_yellow.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonPanel1.Text" xml:space="preserve">
+    <value>クリップボード</value>
+    <comment>Clipboard</comment>
   </data>
-  <data name="aboutlogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aboutlogo.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ribbonPanel2.Text" xml:space="preserve">
+    <value>書式設定</value>
+    <comment>Formatting</comment>
+  </data>
+  <data name="ribbonPanel3.Text" xml:space="preserve">
+    <value>編集</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="ribbonTab1.Text" xml:space="preserve">
+    <value>ホーム</value>
+    <comment>Main</comment>
+  </data>
+  <data name="SaveDocumentQuestionString" xml:space="preserve">
+    <value>この文書を保存する必要がありますか？</value>
+    <comment>Do you have to save this document?</comment>
+  </data>
+  <data name="UpdateMessageString" xml:space="preserve">
+    <value>アップデートがリリースされました。 ダウンロード？</value>
+    <comment>The update was released. Download?</comment>
+  </data>
+  <data name="WordNotFoundString" xml:space="preserve">
+    <value>単語が見つかりません</value>
+    <comment>Word not found</comment>
   </data>
 </root>

@@ -151,4 +151,7 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Style:</value>
+  </data>
 </root>

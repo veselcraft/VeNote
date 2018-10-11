@@ -75,6 +75,14 @@ namespace VeNote
                     MessageBox.Show("Для прымянення змяненняў перазапусціце праграму.", "VeNote");
                 }
             }
+            else if (comboBox1.SelectedIndex == 4)
+            {
+                if (inimanager.GetPrivateString("main", "language") != "ja-JP")
+                {
+                    inimanager.WritePrivateString("main", "language", "ja-JP");
+                    MessageBox.Show("変更を適用するには、プログラムを再起動してください。", "VeNote");
+                }
+            }
             if (comboBox2.SelectedIndex == 0)
             {
                 inimanager.WritePrivateString("main", "style", "office2007");
@@ -147,6 +155,10 @@ namespace VeNote
             else if (inimanager.GetPrivateString("main", "language") == "be-BY")
             {
                 comboBox1.SelectedIndex = 3;
+            }
+            else if (inimanager.GetPrivateString("main", "language") == "ja-JP")
+            {
+                comboBox1.SelectedIndex = 4;
             }
             if (inimanager.GetPrivateString("main", "style") == "office2013") // STYLES - СТИЛИ
             {
