@@ -12,15 +12,21 @@ using System.Globalization;
 using System.Threading;
 using System.Net;
 using System.Diagnostics;
+using Newtonsoft.Json;
+using System.Resources;
+using System.Reflection;
 
 namespace VeNote
 {
     public partial class Form1 : RibbonForm
     {
-        INIManager inimanager = new INIManager(Directory.GetCurrentDirectory() + "\\settings.ini");
+        static string exeasmb = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
+        INIManager inimanager = new INIManager(exeasmb + "\\settings.ini");
         string[] arg;
         string SaveDocumentQuestionString;
         string UpdateMessageString;
+        string WordNotFoundString;
+        string[] originaltextstr;
         public Form1(string[] args)
         {
             switch (inimanager.GetPrivateString("main", "language"))
@@ -28,7 +34,6 @@ namespace VeNote
                 case "en-US":
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
-                    
                     break;
                 case "ru-RU":
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("ru-RU");
@@ -42,9 +47,17 @@ namespace VeNote
                     Thread.CurrentThread.CurrentCulture = new CultureInfo("be-BY");
                     Thread.CurrentThread.CurrentUICulture = new CultureInfo("be-BY");
                     break;
+                case "ja-JP":
+                    Thread.CurrentThread.CurrentCulture = new CultureInfo("ja-JP");
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("ja-JP");
+                    break;
 
             }
-
+            Assembly a = Assembly.Load("VeNote");
+            ResourceManager rm = new ResourceManager("VeNote.Form1", a);
+            SaveDocumentQuestionString = rm.GetString("SaveDocumentQuestionString");
+            UpdateMessageString = rm.GetString("UpdateMessageString");
+            WordNotFoundString = rm.GetString("WordNotFoundString");
             InitializeComponent();
             arg = args;
         }
@@ -52,16 +65,22 @@ namespace VeNote
         public static string GetUpdate()
         {
             string version = Application.ProductVersion;
-            string url = "http://veselcraft.ru/api/CheckUpdates.php?product=" + Application.ProductName;
+            string url = "http://veselcraft.ru/checkUpdates.php?product=" + Application.ProductName;
             string versionActually;
 
             using (var webCheckUpdate = new WebClient())
             {
+                webCheckUpdate.Headers.Add("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; VeNote " + Application.ProductVersion + ")");
                 Stream data = webCheckUpdate.OpenRead(url);
                 StreamReader reader = new StreamReader(data);
                 versionActually = reader.ReadToEnd();
             }
                 return versionActually;
+        }
+
+        private void OriginalText()  // Костыль, чтобы можно было выйти из программы, если только что открытый текст никак не изменялся
+        {
+            originaltextstr = richTextBoxClient.Lines;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -83,6 +102,7 @@ namespace VeNote
             }
             if (inimanager.GetPrivateString("main", "font") != null)
             {
+
                 var cvt = new FontConverter();
                 Font f = cvt.ConvertFromString(inimanager.GetPrivateString("main", "font")) as Font;
                 richTextBoxClient.Font = f;
@@ -91,6 +111,7 @@ namespace VeNote
             {
                 richTextBoxClient.LoadFile(arg[0], RichTextBoxStreamType.PlainText);
                 this.Text = arg[0] + "  -  VeNote";
+                OriginalText();
 
             }
             if (inimanager.GetPrivateString("main", "wordwrap") == "0")
@@ -120,28 +141,17 @@ namespace VeNote
                 );
 
             }
-            switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
-            {
-                case "en-US":
-                    UpdateMessageString = "The update was released. Download?";
-                    break;
-                case "uk-UA":
-                    UpdateMessageString = "Вийшло оновлення. Завантажити?";
-                    break;
-                case "ru-RU":
-                    UpdateMessageString = "Вышло обновление. Скачать?";
-                    break;
-                case "be-BY":
-                    UpdateMessageString = "Выйшла абнаўленне. Скачать?";
-                    break;
-            }
+            
             if (inimanager.GetPrivateString("main", "CheckUpdates") == "1")
             {
-                if (GetUpdate() != "3.0.3.0")
+
+                string updateStr = GetUpdate();
+                UpdateJson updj = JsonConvert.DeserializeObject<UpdateJson>(updateStr);
+                if (updj.version != Application.ProductVersion)
                 {
-                    if (MessageBox.Show(UpdateMessageString + " (" + GetUpdate() + ")", "VeNote", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MessageBox.Show(UpdateMessageString + " (" + updj.version + ")", "VeNote", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
-                        Process.Start("http://veselcraft.ru/post.php?id=8");
+                        Process.Start(updj.link);
                     }
                 }
             }
@@ -150,7 +160,7 @@ namespace VeNote
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void OpenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -159,12 +169,16 @@ namespace VeNote
             {
                 richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
                 this.Text = openFileDialog1.FileName;
+                OriginalText();
             }
         }
 
         private void richTextBoxClient_TextChanged(object sender, EventArgs e)
         {
-
+            if (this.Text.StartsWith("*") == false)
+            {
+                this.Text = "*" + this.Text;
+            }
         }
 
         private void ribbonButtonPaste_Click(object sender, EventArgs e)
@@ -189,24 +203,8 @@ namespace VeNote
 
         private void ribbonButtonNew_Click(object sender, EventArgs e)
         {
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Lines != originaltextstr)
             {
-                
-                switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
-                {
-                    case "en-US":
-                        SaveDocumentQuestionString = "Do you have to save this document?";
-                        break;
-                    case "uk-UA":
-                        SaveDocumentQuestionString = "Ви хочете зберегти документ?";
-                        break;
-                    case "ru-RU":
-                        SaveDocumentQuestionString = "Вы хотите сохранить документ?";
-                        break;
-                    case "be-BY":
-                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
-                        break;
-                }
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
                 "VeNote",
                 MessageBoxButtons.YesNoCancel,
@@ -215,7 +213,7 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                         this.Text = "VeNote";
                         richTextBoxClient.Text = "";
                     }
@@ -234,6 +232,7 @@ namespace VeNote
             {
                 richTextBoxClient.LoadFile(openFileDialog1.FileName, RichTextBoxStreamType.PlainText);
                 this.Text = openFileDialog1.FileName + "  -  VeNote";
+                OriginalText();
             }
         }
 
@@ -242,8 +241,9 @@ namespace VeNote
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                 this.Text = saveFileDialog1.FileName + "  -  VeNote";
+                OriginalText();
             }
         }
 
@@ -251,7 +251,7 @@ namespace VeNote
         {
             if (fontDialog1.ShowDialog() == DialogResult.OK) 
             {
-                richTextBoxClient.SelectionFont = fontDialog1.Font;
+                richTextBoxClient.Font = fontDialog1.Font;
                 var cvt = new FontConverter();
                 string fontSetting = cvt.ConvertToString(fontDialog1.Font);
                 inimanager.WritePrivateString("main", "font", fontSetting);
@@ -265,26 +265,8 @@ namespace VeNote
             inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
             inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
             inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Lines == originaltextstr)
             {
-                switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
-                {
-                    case "en-US":
-                        SaveDocumentQuestionString = "Do you have to save this document?";
-                        break;
-                    case "uk-UA":
-                        SaveDocumentQuestionString = "Ви хочете зберегти документ?";
-                        break;
-                    case "ru-RU":
-                        SaveDocumentQuestionString = "Вы хотите сохранить документ?";
-                        break;
-                    case "be-BY":
-                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
-                        break;
-                }
-                
-
-
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
                 "VeNote",
                 MessageBoxButtons.YesNoCancel,
@@ -293,8 +275,8 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
-                        
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
+                        Application.Exit();
                     }
                 }
                 else if (SaveDocumentQuestion == DialogResult.Cancel)
@@ -348,6 +330,7 @@ namespace VeNote
                         ribbon1.OrbImage = null;
                     }
                 }
+                this.Activate();
             }
         }
 
@@ -357,23 +340,8 @@ namespace VeNote
             inimanager.WritePrivateString("window", "locationy", Convert.ToString(this.Location.Y));
             inimanager.WritePrivateString("window", "sizeh", Convert.ToString(this.Size.Height));
             inimanager.WritePrivateString("window", "sizew", Convert.ToString(this.Size.Width));
-            if (richTextBoxClient.Text != "")
+            if (richTextBoxClient.Text != "" || richTextBoxClient.Lines != originaltextstr)
             {
-                switch (Thread.CurrentThread.CurrentUICulture.IetfLanguageTag)
-                {
-                    case "en-US":
-                        SaveDocumentQuestionString = "Do you have to save this document?";
-                        break;
-                    case "uk-UA":
-                        SaveDocumentQuestionString = "Ви хочете зберегти документ?";
-                        break;
-                    case "ru-RU":
-                        SaveDocumentQuestionString = "Вы хотите сохранить документ?";
-                        break;
-                    case "be-BY":
-                        SaveDocumentQuestionString = "Вы хочаце захаваць дакумент?";
-                        break;
-                }
                 DialogResult SaveDocumentQuestion = MessageBox.Show(SaveDocumentQuestionString,
                 "VeNote",
                 MessageBoxButtons.YesNoCancel,
@@ -382,7 +350,7 @@ namespace VeNote
                 {
                     if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     {
-                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.PlainText);
+                        richTextBoxClient.SaveFile(saveFileDialog1.FileName, RichTextBoxStreamType.UnicodePlainText);
                         Application.Exit();
                     }
                 }
@@ -424,7 +392,7 @@ namespace VeNote
                         }
                         if (findResult == -1)
                         {
-                            MessageBox.Show("Слово не найдено");
+                            MessageBox.Show(WordNotFoundString, ProductName, MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
 
                     }
@@ -432,4 +400,11 @@ namespace VeNote
             }
         }
     }
+
+    class UpdateJson
+    {
+        public string version { get; set; }
+        public string link { get; set; }
+    }
 }
+
