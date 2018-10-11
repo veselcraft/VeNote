@@ -331,4 +331,13 @@
         vAAADrwBlbxySQAAABNJREFUOE9jGAWjYBSMAjBgYAAABBAAAadEfGMAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="SaveDocumentQuestionString" xml:space="preserve">
+    <value>Вы хочаце захаваць дакумент?</value>
+  </data>
+  <data name="UpdateMessageString" xml:space="preserve">
+    <value>Выйшла абнаўленне. Скачать?</value>
+  </data>
+  <data name="WordNotFoundString" xml:space="preserve">
+    <value>Слова не знойдзена</value>
+  </data>
 </root>

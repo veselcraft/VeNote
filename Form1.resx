@@ -117,18 +117,19 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fontDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>28, 21</value>
-  </metadata>
-  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  </data>
+  <data name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>144, 21</value>
-  </metadata>
+  </data>
   <data name="openFileDialog1.Filter" xml:space="preserve">
     <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
   </data>
-  <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <data name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>284, 21</value>
-  </metadata>
+  </data>
   <data name="saveFileDialog1.Filter" xml:space="preserve">
     <value>Текстовые файлы|*.txt|Все файлы|*.*</value>
   </data>
@@ -136,7 +137,6 @@
   <data name="richTextBoxClient.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="richTextBoxClient.Font" type="System.Drawing.Font, System.Drawing">
     <value>Lucida Console, 11.25pt</value>
   </data>
@@ -444,12 +444,12 @@
   <data name="ribbonOrbOptionButton1.Text" xml:space="preserve">
     <value>О программе</value>
   </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
     <value>True</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  </data>
+  <data name="$this.TrayHeight" type="System.Int32, mscorlib">
     <value>47</value>
-  </metadata>
+  </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
@@ -635,5 +635,14 @@
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.RibbonForm, System.Windows.Forms.Ribbon, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="SaveDocumentQuestionString" xml:space="preserve">
+    <value>Вы хотите сохранить документ?</value>
+  </data>
+  <data name="UpdateMessageString" xml:space="preserve">
+    <value>Вышло обновление. Скачать?</value>
+  </data>
+  <data name="WordNotFoundString" xml:space="preserve">
+    <value>Слово не найдено</value>
   </data>
 </root>

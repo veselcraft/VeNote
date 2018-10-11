@@ -342,4 +342,13 @@
   <data name="ribbonOrbOptionButton2.Text" xml:space="preserve">
     <value>About</value>
   </data>
+  <data name="SaveDocumentQuestionString" xml:space="preserve">
+    <value>Do you have to save this document?</value>
+  </data>
+  <data name="UpdateMessageString" xml:space="preserve">
+    <value>The update was released. Download?</value>
+  </data>
+  <data name="WordNotFoundString" xml:space="preserve">
+    <value>Word not found</value>
+  </data>
 </root>
