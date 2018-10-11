@@ -12,7 +12,7 @@ To get started, download the VeNote source code using Git for Windows (https://g
 	
 ...or simply by downloading [this archive](https://github.com/veselcraft/VeNote/archive/master.zip).
 
-Now you need to open the file "**VeNote.csproj**" in Visual Studio. It is **recommended** that you use Visual Studio C# 2008 Express Edition. **Be sure to connect the file "*System.Windows.Forms.Ribbon.dll*" to the project, otherwise nothing will work.**
+Now you need to open the file "**VeNote.csproj**" in Visual Studio. It is **recommended** that you use Visual Studio C# 2008 Express Edition. **Be sure to connect the file "*System.Windows.Forms.Ribbon.dll*" and "*Newtonsoft.Json.dll*" to the project, otherwise nothing will work.**
 
 Just a moment's attention. If you can not build, *you will not be able to build in any case*, then you can [download stable builds here](https://github.com/veselcraft/VeNote/releases/latest) (*To unpack the archive in the .7z format, you need [7-Zip](http://www.7-zip.org/), or [WinRAR](http://rarlab.com/)*).
 
@@ -27,7 +27,7 @@ If you want to help my project, you can fork this project, fix the errors and [p
 	
 ...или просто скачав [этот архив](https://github.com/veselcraft/VeNote/archive/master.zip).
 
-Теперь вам надо открыть файл "**VeNote.csproj**" в Visual Studio. **Рекомендуется** Visual Studio C# 2008 Express Edition. **Обязательно подключите к проекту файл "*System.Windows.Forms.Ribbon.dll*", иначе ничего не заработает.**
+Теперь вам надо открыть файл "**VeNote.csproj**" в Visual Studio. **Рекомендуется** Visual Studio C# 2008 Express Edition. **Обязательно подключите к проекту файл "*System.Windows.Forms.Ribbon.dll*" и "*Newtonsoft.Json.dll*", иначе ничего не заработает.**
 
 Теперь минутку внимания. Если вы не сможете собрать VeNote, *а вы в любом случае не соберёте*, тогда вам придётся [скачать стабильную сборку здесь](https://github.com/veselcraft/VeNote/releases/latest) (*Для распаковки архива в формате .7z, вам потребуется [7-Zip](http://www.7-zip.org/), или [WinRAR](http://rarlab.com/)*).
 
